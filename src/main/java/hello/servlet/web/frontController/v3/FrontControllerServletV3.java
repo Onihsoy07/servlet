@@ -41,7 +41,7 @@ public class FrontControllerServletV3 extends HttpServlet {
 
         ModelView modelView = controller.process(paramMap);
 
-        MyView myView = ww
+        MyView myView = viewResolver(modelView);
         myView.render(modelView.getModel(), request, response);
     }
 
