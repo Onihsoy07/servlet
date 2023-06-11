@@ -1,7 +1,14 @@
-#http request ??? ??(????? ??)
+#http (request, response debug 로그 출력)
+#개발시에만 사용 권장
 logging:
   level:
     org:
       apache:
         coyote:
           http11: debug
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
